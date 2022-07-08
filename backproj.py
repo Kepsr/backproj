@@ -36,7 +36,7 @@ ax2.set_title("Radon transform\n(Sinogram)")
 ax2.set_xlabel("Projection angle (deg)")
 ax2.set_ylabel("Projection position (pixels)")
 ax2.imshow(sinogram, cmap=plt.cm.Greys_r,
-           extent=(-dx, 180.0 + dx, -dy, sinogram.shape[0] + dy),
+           extent=(0. - extreme, 0. + extreme, -dy, sinogram.shape[0] + dy),
            aspect='auto')
 
 fig.tight_layout()
